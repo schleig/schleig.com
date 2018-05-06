@@ -2,6 +2,10 @@ baseURL = "https://schleig.com/"
 languageCode = "en-us"
 title = "Schleig.com"
 theme = "coder" # set the theme
+copyright = "2018"
+
+[blackfriday]
+    hrefTargetBlank = true
 
 [permalinks] # configure post and fixed pages permalinks
     post = "posts/:title/"
@@ -14,29 +18,33 @@ theme = "coder" # set the theme
     keywords = "blog,developer,personal" # site keywords
     
 # Social links
-[[params.social]]
-    name = "Github"
-    weight = 1
-    url = "https://github.com/danielschleig/"
+# [[params.social]]
+#    name = "Github"
+#    weight = 1
+#    url = "https://github.com/schleig/"
 [[params.social]]
     name = "LinkedIn"
-    weight = 2
+    weight = 1
     url = "https://www.linkedin.com/in/danielschleig/"
 [[params.social]]
     name = "Email"
-    weight = 3
+    weight = 2
     url = "mailto:daniel@schleig.com"
 	
 # Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts/"
+# [[menu.main]]
+#    name = "Blog"
+#    weight = 1
+#    url = "/blog/"
 [[menu.main]]
     name = "Projects"
-    weight = 2
+    weight = 1
     url = "/projects/"
+#[[menu.main]]
+#    name = "Resume"
+#    weight = 3
+#    url = "https://daniel.schleig.com/"
 [[menu.main]]
     name = "About"
-    weight = 3
+    weight = 2
     url = "/about/"
